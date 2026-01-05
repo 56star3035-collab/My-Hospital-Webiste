@@ -67,7 +67,7 @@
                 </button>
             </div>
             <ul class="hidden text-black lg:flex lg:gap-x-12">
-                <a href="Delmot-HomePage.html">
+                <a href="index.html">
                     <li
                         class="group relative font-bold transition-all duration-[.4s] hover:text-(--text-color) cursor-pointer">
                         Home
@@ -161,8 +161,8 @@
                         </div>
                         <div class="mt-6 flow-root">
                             <div class="-my-6 divide-y divide-white/10">
-                                <div class="space-y-2 py-6">
-                                    <a href="Delmot-HomePage.html"
+                                <div class=" flex flex-col py-6">
+                                    <a href="index.html"
                                         class="relative -mx-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-all duration-[.3s] hover:text-black hover:bg-white">
                                         Home
                                     </a>
@@ -287,7 +287,7 @@
                 <p>ABOUT OUR HOSPITAL</p>
             </div>
             <div class="flex justify-center items-center gap-2 bg-[#0E4755] p-3">
-                <a href="Delmot-HomePage.html" class="flex items-center gap-2">
+                <a href="index.html" class="flex items-center gap-2">
                     <i class="fa-regular fa-house"></i>
                     <h1 class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">Home</h1>
                 </a>|
@@ -304,7 +304,7 @@
                 <img src="https://themetechmount.com/html/delmont/images/single-img-four.png" class="h-140 w-150"
                     alt="">
             </div>
-            <div class="flex flex-col gap-5 w-250">
+            <div class="flex flex-col gap-5 lg:w-250">
                 <h5 class="text-[#9DABAF]">WHAT WE DO</h5>
                 <h1 class="text-4xl font-bold text-(--heading-color)">We Have 25 Years Experience</h1>
                 <p class="text-[#9DABAF]">We offer extensive medical procedures to outbound and inbound patients what it
@@ -580,32 +580,71 @@
                 </div>
             </div>
             <!-- Reviews -->
-            <div
-                class="w-full text-white bg-(--heading-color) flex flex-col justify-center gap-10 py-15 px-15 lg:w-[850px] lg:absolute lg:-bottom-110 lg:right-0 lg:flex-row lg:py-20">
-                <div>
-                    <div class="w-[200px] flex flex-col justify-center items-center text-center">
-                        <img src="	https://themetechmount.com/html/delmont/images/testimonial/01.jpg"
-                            class="rounded-full" alt="">
-                        <div>
-                            <h5 class="text-(--text-color) font-bold text-xl">RAshelay Foster</h5>
-                            <p class="text-[10px]">Pateint</p>
+            <div class="text-white lg:w-210 overflow-hidden lg:absolute lg:right-0 lg:-bottom-100 lg:py-10 bg-(--heading-color)"
+                id="slider-wrapper2">
+                <div class="flex items-center transition-transform duration-500 ease-in-out" id="slider2">
+
+                    <!-- Review 1 -->
+                    <div class="min-w-full flex flex-col px-10 py-15 lg:flex-row gap-10 lg:px-15">
+                        <div class="w-[200px] text-center">
+                            <img src="https://themetechmount.com/html/delmont/images/testimonial/01.jpg"
+                                class="rounded-full">
+                            <h5 class="font-bold text-xl text-(--text-color)">RAshelay Foster</h5>
+                            <p class="text-xs">Patient</p>
+                        </div>
+
+                        <div class="bg-white/10 p-8 relative">
+                            <p>Prior to my stay at Delmont, I was aware of their stellar reputation and multiple friends
+                                commented about how lucky I was to have my surgery scheduled there. As a result my
+                                expectations were high and yet the kind and professional staff with excellent patient
+                                care surpassed them.</p>
+                            <div class="text-yellow-400 mt-6">★★★★★</div>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white/10 p-8 relative">
-                    <p>
-                        Prior to my stay at Delmont, I was aware of their stellar reputation and multiple friends
-                        commented about how lucky I was to have my surgery scheduled there. As a result my expectations
-                        were high and yet the kind and professional staff with excellent patient care surpassed them.
-                    </p>
-                    <div class="text-yellow-400 mt-10">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+
+                    <!-- Review 2 -->
+                    <div class="min-w-full flex flex-col px-10 py-15 lg:flex-row gap-10 lg:px-15">
+                        <div class="w-[200px] text-center">
+                            <img src="https://themetechmount.com/html/delmont/images/testimonial/02.jpg"
+                                class="rounded-full">
+                            <h5 class="font-bold text-xl text-(--text-color)">Alan Sears</h5>
+                            <p class="text-xs">Patient</p>
+                        </div>
+
+                        <div class="bg-white/10 p-8 relative">
+                            <p>Prior to my stay at Delmont, I was aware of their stellar reputation and multiple friends
+                                commented about how lucky I was to have my surgery scheduled there. As a result my
+                                expectations were high and yet the kind and professional staff with excellent patient
+                                care surpassed them.</p>
+                            <div class="text-yellow-400 mt-6">★★★★★</div>
+                        </div>
                     </div>
-                    <div class="w-10 h-10 bg-white/10 absolute -top-4 lg:top-5 lg:-left-3 rotate-45 "></div>
+                    <!-- Review 3 -->
+                    <div class="min-w-full flex flex-col px-10 py-15 lg:flex-row gap-10 lg:px-15">
+                        <div class="w-[200px] text-center">
+                            <img src="https://themetechmount.com/html/delmont/images/testimonial/03.jpg"
+                                class="rounded-full">
+                            <h5 class="font-bold text-xl text-(--text-color)">Raymon Meyers</h5>
+                            <p class="text-xs">Patient</p>
+                        </div>
+
+                        <div class="bg-white/10 p-8 relative">
+                            <p>Prior to my stay at Delmont, I was aware of their stellar reputation and multiple friends
+                                commented about how lucky I was to have my surgery scheduled there. As a result my
+                                expectations were high and yet the kind and professional staff with excellent patient
+                                care surpassed them.</p>
+                            <div class="text-yellow-400 mt-6">★★★★★</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <div class="absolute right-6 bottom-6 flex gap-4">
+                    <button onclick="prev2()" class="text-white">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button onclick="next2()" class="text-white"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
