@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delmot About</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Demont.css">
+</head>
+
+<body class="selection:bg-(--text-color) selection:text-white">
+    <!-- Topbar -->
+    <div class="hidden bg-(--heading-color) text-white lg:flex lg:item-center lg:gap-5 lg:px-15 text-sm lg:block"
+        id="topBar">
+        <div class="flex justify-between item-center py-5 gap-70">
+            <div class="flex justify-center item-center gap-5">
+                <div class="flex justify-center item-center gap-2">
+                    <div><i class="fa-solid fa-location-dot text-(--text-color)"></i></div>
+                    <p>234 Triumph, Los Angeles, California,US</p>
+                </div>
+                <div class="flex justify-center item-center gap-2">
+                    <div><i class="fa-solid fa-clock text-(--text-color)"></i></div>
+                    <p>Mon - Sat 8:00 - 18:00. Sunday CLOSED</p>
+                </div>
+            </div>
+            <div class="flex gap-5">
+                <div>
+                    <i
+                        class="fa-brands fa-facebook-f transition-all duration-[.3s] hover:text-(--text-color) cursor-pointer"></i>
+                    <i
+                        class="fa-brands fa-twitter transition-all duration-[.3s] hover:text-(--text-color) cursor-pointer"></i>
+                    <i
+                        class="fa-brands fa-pinterest-p transition-all duration-[.3s] hover:text-(--text-color) cursor-pointer"></i>
+                    <i
+                        class="fa-brands fa-linkedin-in transition-all duration-[.3s] hover:text-(--text-color) cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+        <button
+            class="bg-(--text-color) font-semibold py-4 px-6 my-1 transition-all duration-[.5s] hover:bg-white hover:text-black cursor-pointer">GET
+            A APPOINTMENT!</button>
+    </div>
+
+    <!-- Header -->
+    <header class="w-full sticky top-0 z-100 bg-white shadow-md">
+        <!-- Nav Bar -->
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-15" id="navBar">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <!-- <span class="sr-only">Your Company</span> -->
+                    <img src="https://themetechmount.com/html/delmont/images/logo-img.png" alt="" class="h-8 w-auto" />
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black">
+                    <!-- <span class="sr-only">Open main menu</span> -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden text-black lg:flex lg:gap-x-12">
+                <a href="Delmot-HomePage.html">
+                    <li
+                        class="group relative font-bold transition-all duration-[.4s] hover:text-(--text-color) cursor-pointer">
+                        Home
+                    </li>
+                </a>
+                <a href="Delmot-about.html">
+                    <li
+                        class="group relative font-bold transition-all duration-[.4s] hover:text-(--text-color) cursor-pointer">
+                        About Us
+                    </li>
+                </a>
+                <a href="Delmont-Research.html">
+                    <li
+                        class="group relative font-bold transition-all duration-[.4s] hover:text-(--text-color) cursor-pointer">
+                        Research
+                    </li>
+                </a>
+                <li
+                    class="group relative font-bold transition-all duration-[.4s] hover:text-(--text-color) cursor-pointer">
+                    Services
+                    <ul
+                        class="hidden absolute flex flex-col shadow-md text-gray-500 bg-white font-awesome z-50 group-hover:block">
+                        <a href="Delmont-Neurology.html">
+                            <li
+                                class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                Neurology Services</li>
+                        </a>
+                        <a href="Delmont-Cardilogy.html">
+                            <li
+                                class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                Cardiology Services</li>
+                        </a>
+                        <a href="Delmont-X-ray.html">
+                            <li
+                                class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                X-RAY & RMI Services</li>
+                        </a>
+                        <a href="Delmont-Eye.html">
+                            <li
+                                class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                Eyecare Services</li>
+                        </a>
+                        <a href="Delmont-Dental.html">
+                            <li
+                                class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                Dental Services</li>
+                        </a>
+                        <a href="Delmont-Orthopaedics.html">
+                            <li
+                                class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                Orthopadics Services</li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="Delmont-blogs.html">
+                    <li
+                        class="group relative font-bold transition-all duration-[.4s] hover:text-(--text-color) cursor-pointer">
+                        Blogs
+                    </li>
+                </a>
+                <li class="flex">
+                    <div
+                        class="border-r-[2px] border-gray-300 pr-3 transition-all duration-[.5s] hover:text-(--text-color) cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="pl-3 transition-all duration-[.5s] hover:text-(--text-color) cursor-pointer"><i
+                            class="fa-solid fa-cart-arrow-down"></i></div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu -->
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-(--text-color) p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between bg-white">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <!-- <span class="sr-only">Your Company</span> -->
+                                <img src="https://themetechmount.com/html/delmont/images/logo-img.png" alt=""
+                                    class="h-8 w-auto" />
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-black">
+                                <span class="sr-only">Close menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-white/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="Delmot-HomePage.html"
+                                        class="relative -mx-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-all duration-[.3s] hover:text-black hover:bg-white">
+                                        Home
+                                    </a>
+                                    <a href="Delmot-about.html"
+                                        class="relative -mx-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-all duration-[.3s] hover:text-black hover:bg-white">
+                                        About Us
+                                    </a>
+                                    <a href="Delmont-Research.html"
+                                        class="relative -mx-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-all duration-[.3s] hover:text-black hover:bg-white">
+                                        Research
+                                    </a>
+                                    <div class="relative -mx-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-all duration-[.3s] hover:text-black hover:bg-white"
+                                        onclick="toggleMenu(this)">Services
+                                        <ul
+                                            class="toggle-menu hidden absolute w-full -left-0 top-full z-50 flex flex-col shadow-md text-gray-500 bg-white font-awesome">
+                                            <a href="Delmont-Neurology.html">
+                                                <li
+                                                    class="font-normal w-[200px] py-3 transition-all duration-[.5s] border-b w-full border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                                    Neurology Services</li>
+                                            </a>
+                                            <a href="Delmont-Cardilogy.html">
+                                                <li
+                                                    class="font-normal w-[200px] py-3 transition-all duration-[.5s] w-full border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                                    Cardiology Services</li>
+                                            </a>
+                                            <a href="Delmont-X-ray.html">
+                                                <li
+                                                    class="font-normal w-[200px] py-3 transition-all duration-[.5s] w-full border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                                    X-RAY & RMI Services</li>
+                                            </a>
+                                            <a href="Delmont-Eye.html">
+                                                <li
+                                                    class="font-normal w-[200px] py-3 transition-all duration-[.5s] w-full border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                                    Eyecare Services</li>
+                                            </a>
+                                            <a href="Delmont-Dental.html">
+                                                <li
+                                                    class="font-normal w-[200px] py-3 transition-all duration-[.5s] w-full border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                                    Dental Services</li>
+                                            </a>
+                                            <a href="Delmont-Orthopaedics.html">
+                                                <li
+                                                    class="font-normal w-[200px] py-3 transition-all duration-[.5s] w-full border-b border-gray-200 hover:bg-(--text-color) hover:text-white px-2">
+                                                    Orthopadics Services</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <a href="Delmont-blogs.html">
+                                        <div
+                                            class="relative -mx-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-white transition-all duration-[.3s] hover:text-black hover:bg-white">
+                                            Blogs
+                                        </div>
+                                    </a>
+                                    <li class="flex item-center justify-center bg-white">
+                                        <div
+                                            class="border-r-[2px] border-gray-300 pr-3 transition-all duration-[.5s] hover:text-(--text-color) cursor-pointer">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                        <div
+                                            class="pl-3 transition-all duration-[.5s] hover:text-(--text-color) cursor-pointer">
+                                            <i class="fa-solid fa-cart-arrow-down"></i>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+    <!-- Header End -->
+
+    <!-- Icons card -->
+    <div class="hidden relative bg-[#F9FAFA]  py-5 lg:block lg:grid lg:grid-cols-4" id="iconBar">
+        <div class="grid grid-cols-3 col-span-3">
+            <!-- 1 -->
+            <div class="flex gap-5 justify-center items-center">
+                <div class="w-[50px] h-[50px] flex justify-center items-center shadow-md bg-white">
+                    <i class="fa-regular fa-hospital text-[34px] text-(--text-color)"></i>
+                </div>
+                <div>
+                    <h4>Number 1 Hospital</h4>
+                    <p class="text-[#ACBBC0] text-[14px]">In United States</p>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="flex gap-5 justify-center items-center">
+                <div class="w-[50px] h-[50px] flex justify-center items-center shadow-md bg-white">
+                    <i class="fa-solid fa-user-doctor text-[34px] text-(--text-color)"></i>
+                </div>
+                <div>
+                    <h4>Personal Cabinet</h4>
+                    <p class="text-[#ACBBC0] text-[14px]">Qualified Staff</p>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="flex gap-5 justify-center items-center">
+                <div class="w-[50px] h-[50px] flex justify-center items-center shadow-md bg-white">
+                    <i class="fa-regular fa-thumbs-up text-[34px] text-(--text-color)"></i>
+                </div>
+                <div>
+                    <h4>Get Result Online</h4>
+                    <p class="text-[#ACBBC0] text-[14px]">Satisfied Patients</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-(--text-color) text-white flex justify-center items-center absolute bottom-0 right-0 p-4">
+            <i class="fa-solid fa-phone"></i>
+            <p>Toll Free : +92 329 7342850</p>
+        </div>
+    </div>
+
+    <!-- About hero section -->
+    <section>
+        <div
+            class="bg-[url(https://themetechmount.com/html/delmont/images/ttm-pagetitle-bg.jpg)] bg-center bg-cover text-white flex flex-col gap-10 px-5 py-15 md:flex-row md:justify-between md:items-center md:px-12 md:py-22">
+            <div class="flex flex-col gap-2 md:gap-5">
+                <h1 class="font-bold text-4xl lg:text-5xl">About us</h1>
+                <p>ABOUT OUR HOSPITAL</p>
+            </div>
+            <div class="flex justify-center items-center gap-2 bg-[#0E4755] p-3">
+                <a href="Delmot-HomePage.html" class="flex items-center gap-2">
+                    <i class="fa-regular fa-house"></i>
+                    <h1 class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">Home</h1>
+                </a>|
+                <h1 class="text-(--text-color)">About Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Experience -->
+    <section>
+        <div class="flex flex-col justify-center gap-5 px-5 py-10 lg:flex-row lg:px-10 lg:py-20">
+
+            <div class="py-10 px-5 lg:py-0 lg:px-0">
+                <img src="https://themetechmount.com/html/delmont/images/single-img-four.png" class="h-140 w-150"
+                    alt="">
+            </div>
+            <div class="flex flex-col gap-5 w-250">
+                <h5 class="text-[#9DABAF]">WHAT WE DO</h5>
+                <h1 class="text-4xl font-bold text-(--heading-color)">We Have 25 Years Experience</h1>
+                <p class="text-[#9DABAF]">We offer extensive medical procedures to outbound and inbound patients what it
+                    is and we are very proud of achievement of our stpatients for recovery</p>
+                <!-- Our missin card -->
+                <div class="space-y-6">
+
+                    <!-- ITEM 1 -->
+                    <div class="accordion-item cursor-pointer w-full" onclick="toggleAbout(this)">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-(--heading-color)">Our Mission</h2>
+
+                            <div class="w-5 h-5 rounded-full border-2 flex justify-center items-center">
+                                <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-content h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out">
+                            <div class="mt-4 flex gap-5 items-center">
+                                <img src="https://themetechmount.com/html/delmont/images/portfolio/post-one-1200x800.jpg"
+                                    class="w-40" />
+                                <p class="text-[#9DABAF]">
+                                    Our Clinic has grown to provide a world class facility for the treatment of tooth
+                                    loss, dental cosmetics and bore advanced restorative dentistry. We are among the
+                                    most qualified implant providers in the AUS with over 30 years of quality training
+                                    and experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="accordion-item cursor-pointer w-full" onclick="toggleAbout(this)">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-(--heading-color)">Our Vision</h2>
+
+                            <div class="w-5 h-5 rounded-full border-2 flex justify-center items-center">
+                                <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-content h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out">
+                            <div class="mt-4 flex gap-5 items-center">
+                                <img src="https://themetechmount.com/html/delmont/images/portfolio/post-two-1200x800.jpg"
+                                    class="w-40" />
+                                <p class="text-[#9DABAF]">
+                                    Our Clinic has grown to provide a world class facility for the treatment of tooth
+                                    loss, dental cosmetics and bore advanced restorative dentistry. We are among the
+                                    most qualified implant providers in the AUS with over 30 years of quality training
+                                    and experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="accordion-item cursor-pointer w-full" onclick="toggleAbout(this)">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-(--heading-color)">Our Strategies</h2>
+
+                            <div class="w-5 h-5 rounded-full border-2 flex justify-center items-center">
+                                <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-content h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out">
+                            <div class="mt-4 flex gap-5 items-center">
+                                <img src="https://themetechmount.com/html/delmont/images/portfolio/post-one-1200x800.jpg"
+                                    class="w-40" />
+                                <p class="text-[#9DABAF]">
+                                    Our Clinic has grown to provide a world class facility for the treatment of tooth
+                                    loss, dental cosmetics and bore advanced restorative dentistry. We are among the
+                                    most qualified implant providers in the AUS with over 30 years of quality training
+                                    and experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About statics -->
+    <section>
+        <div
+            class="grid justify-center items-center grid-cols-1 bg-(--text-color) text-white md:grid-cols-3 lg:grid-cols-4">
+            <!-- card 1 -->
+            <div class="flex flex-col justify-center items-center gap-3 border-b border-white/50 p-6 lg:border-x">
+                <div class="text-5xl">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <h1 class="text-4xl font-bold">354</h1>
+                <p class="text-xl text-white/70">Quailified Staff</p>
+            </div>
+            <!-- card 2 -->
+            <div class="flex flex-col justify-center items-center gap-3 border border-white/50 p-6">
+                <div class="text-5xl">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h1 class="text-4xl font-bold">30</h1>
+                <p class="text-xl text-white/70">Experience</p>
+            </div>
+            <!-- card 3 -->
+            <div class="flex flex-col justify-center items-center gap-3 border-white/50 p-6">
+                <div class="text-5xl">
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+                <h1 class="text-4xl font-bold">200</h1>
+                <p class="text-xl text-white/70">Hospital Rooms</p>
+            </div>
+            <!-- card  -->
+            <div class="flex flex-col justify-center items-center gap-3 border border-white/50 p-6 lg:border-x">
+                <div class="text-5xl">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </div>
+                <h1 class="text-4xl font-bold">7015+</h1>
+                <p class="text-xl text-white/70">Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- our staff -->
+    <section>
+        <div class="bg-white">
+            <!-- staff heading -->
+            <div class="flex flex-col justify-center items-center gap-10 px-5 py-10 lg:px-15 lg:py-20">
+                <div class="grid justify-center items-center grid-cols-4 gap-10">
+                    <div class="col-span-3 flex flex-col gap-2">
+                        <h5 class="text-[#9DABAF]">MEET OUR EXPERIENCED TEAM</h5>
+                        <h1 class="text-3xl font-bold md:text-4xl">Our Dedicated Doctors Team</h1>
+                        <p class="text-[#9DABAF]">We offer extensive medical procedures to outbound and inbound patients
+                            what it is and we are very proud of achievement of our staff, We are all work together to
+                            help our all patients for recovery
+                        </p>
+                    </div>
+                    <!-- <div class="hidden md:flex  md:justify-center md:items-center md:gap-3 md:block">
+                        <button
+                            class="w-8 h-8 flex justify-center items-center bg-white font-bold border border-(--heading-color) transition-all duration-500 cursor-pointer text-(--heading-color) hover:bg-(--text-color) hover:border-none hover:text-white">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button
+                            class="w-8 h-8 flex justify-center items-center bg-white font-bold border border-(--heading-color) transition-all duration-500 cursor-pointer text-(--heading-color) hover:bg-(--text-color) hover:border-none hover:text-white">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div> -->
+                </div>
+                <!-- Staff cards -->
+                <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- doc card 1 -->
+                    <div
+                        class="group w-[280px] p-4 flex flex-col gap-5 shadow-2xl transition-all duration-500 hover:bg-(--text-color)">
+                        <div class="relative">
+                            <img src="https://themetechmount.com/html/delmont/images/team-member/team-img01.jpg" alt="">
+                            <div
+                                class="hidden bg-(--heading-color) absolute w-full top-0 h-full opacity-90 transition-all duration-500 group-hover:block">
+                            </div>
+                            <div
+                                class="hidden absolute top-40 left-30 w-10 h-10 bg-(--text-color) group-hover:flex justify-center items-center text-white cursor-pointer transition-all duration-500 ease-in-out hover:bg-white hover:text-(--text-color) group-hover:block">
+                                <i class="fa-solid fa-plus text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="text-[12px] text-[#9DABAF] group-hover:text-white">Senoir Dr. at Delmot</p>
+                            <h1 class="text-(--heading-color) text-xl group-hover:text-white">Dr. Metthew Wood</h1>
+                        </div>
+                    </div>
+                    <!-- doc card 2 -->
+                    <div
+                        class="group w-[280px] p-4 flex flex-col gap-5 shadow-2xl transition-all duration-500 hover:bg-(--text-color) ">
+                        <div class="relative">
+                            <img src="https://themetechmount.com/html/delmont/images/team-member/team-img02.jpg" alt="">
+                            <div
+                                class="hidden bg-(--heading-color) absolute w-full top-0 h-full opacity-90 transition-all duration-500 group-hover:block">
+                            </div>
+                            <div
+                                class="hidden absolute top-40 left-30 w-10 h-10 bg-(--text-color) group-hover:flex justify-center items-center text-white cursor-pointer transition-all duration-500 ease-in-out hover:bg-white hover:text-(--text-color) group-hover:block">
+                                <i class="fa-solid fa-plus text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="text-[12px] text-[#9DABAF] group-hover:text-white">Cardiologist Specialist</p>
+                            <h1 class="text-(--heading-color) text-xl group-hover:text-white">Dr. Roy Coleman</h1>
+                        </div>
+                    </div>
+                    <!-- doc card 3 -->
+                    <div
+                        class="group w-[280px] p-4 flex flex-col gap-5 shadow-2xl transition-all duration-500 hover:bg-(--text-color)">
+                        <div class="relative">
+                            <img src="https://themetechmount.com/html/delmont/images/team-member/team-img03.jpg" alt="">
+                            <div
+                                class="hidden bg-(--heading-color) absolute w-full top-0 h-full opacity-90 transition-all duration-500 group-hover:block">
+                            </div>
+                            <div
+                                class="hidden absolute top-40 left-30 w-10 h-10 bg-(--text-color) group-hover:flex justify-center items-center text-white cursor-pointer transition-all duration-500 ease-in-out hover:bg-white hover:text-(--text-color) group-hover:block">
+                                <i class="fa-solid fa-plus text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="text-[12px] text-[#9DABAF] group-hover:text-white">Neurology Specialist</p>
+                            <h1 class="text-(--heading-color) text-xl group-hover:text-white">Dr. Andrew Bert</h1>
+                        </div>
+                    </div>
+                    <!-- doc card 4 -->
+                    <div
+                        class="group w-[280px] p-4 flex flex-col gap-5 shadow-2xl transition-all duration-500 hover:bg-(--text-color)">
+                        <div class="relative">
+                            <img src="https://themetechmount.com/html/delmont/images/team-member/team-img04.jpg" alt="">
+                            <div
+                                class="hidden bg-(--heading-color) absolute w-full top-0 h-full opacity-90 transition-all duration-500 group-hover:block">
+                            </div>
+                            <div
+                                class="hidden absolute top-40 left-30 w-10 h-10 bg-(--text-color) group-hover:flex justify-center items-center text-white cursor-pointer transition-all duration-500 ease-in-out hover:bg-white hover:text-(--text-color) group-hover:block">
+                                <i class="fa-solid fa-plus text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="text-[12px] text-[#9DABAF] group-hover:text-white">Senoir Pathalogist</p>
+                            <h1 class="text-(--heading-color) text-xl group-hover:text-white">Dr. Terresa Mayer</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Reviews -->
+    <section>
+        <div class="relative">
+            <div
+                class="bg-[url(https://themetechmount.com/html/delmont/images/bg-image/row-bgimage-1.jpg)] bg-center bg-cover flex flex-col justify-center items-center gap-5 text-center px-3 py-10 lg:py-40">
+                <div
+                    class="text-3xl text-white w-15 h-15 rounded-full bg-(--text-color) flex justify-center items-center animate-pulse">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <p class="text-[#A9ABAF] tracking-widest">Time can't be Resisted, But Aging Can</p>
+                <h1 class="text-[32px] text-(--heading-color) font-bold lg:text-5xl">Commited To Trusted Health Care
+                    Delmont
+                </h1>
+                <h5 class="text-xl font-semibold text-(--heading-color) md:text-2xl">Get Your Quote or Call: <spanc
+                        class="text-(--text-color)">
+                        (0080) 123-453-789</span></h5>
+                <div class="flex gap-5">
+                    <button
+                        class="py-2 px-5 text-(--heading-color) border border-(--heading-color) cursor-pointer transition-all duration-500 hover:bg-(--heading-color) hover:text-white">
+                        APPOINTMENT!
+                    </button>
+                    <button
+                        class="py-2 px-5 text-white bg-(--text-color) cursor-pointer transition-all duration-500 hover:bg-(--heading-color)">
+                        SEE HOW WE CAN HELP
+                    </button>
+                </div>
+            </div>
+            <!-- happy clients -->
+            <div
+                class="text-white w-full bg-(--text-color) flex flex-col gap-2 px-10 py-20 lg:w-[550px] lg:py-20 lg:pl-15 lg:pr-35 lg:absolute lg:-bottom-85">
+                <p>Clients</p>
+                <h1 class="text-4xl font-bold">Happy Clients & Patients</h1>
+                <p class="text-white/70">
+                    If you need any medical help we are available for you. Lorem ipsum dolor sit amet, sectetur
+                    adipiscing
+                    elit, sed do eiusmod tempor the incididunt ut labore et dolore.
+                </p>
+                <div class="pt-10">
+                    <button class="font-semibold">
+                        VIEW MORE DETAILS<span class="text-[12px] pl-3"><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                </div>
+            </div>
+            <!-- Reviews -->
+            <div
+                class="w-full text-white bg-(--heading-color) flex flex-col justify-center gap-10 py-15 px-15 lg:w-[850px] lg:absolute lg:-bottom-110 lg:right-0 lg:flex-row lg:py-20">
+                <div>
+                    <div class="w-[200px] flex flex-col justify-center items-center text-center">
+                        <img src="	https://themetechmount.com/html/delmont/images/testimonial/01.jpg"
+                            class="rounded-full" alt="">
+                        <div>
+                            <h5 class="text-(--text-color) font-bold text-xl">RAshelay Foster</h5>
+                            <p class="text-[10px]">Pateint</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-8 relative">
+                    <p>
+                        Prior to my stay at Delmont, I was aware of their stellar reputation and multiple friends
+                        commented about how lucky I was to have my surgery scheduled there. As a result my expectations
+                        were high and yet the kind and professional staff with excellent patient care surpassed them.
+                    </p>
+                    <div class="text-yellow-400 mt-10">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="w-10 h-10 bg-white/10 absolute -top-4 lg:top-5 lg:-left-3 rotate-45 "></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around items-center gap-10 mb-20 mt-20 lg:mt-120">
+            <div class="group relative flex justify-center items-center">
+                <img src="https://themetechmount.com/html/delmont/images/client/client-01.png" alt="">
+                <div
+                    class="opacity-0 bg-black/50 text-white py-1 px-6 rounded-xl absolute -top-10 transition-all duration-500 group-hover:opacity-100">
+                    client-01
+                </div>
+            </div>
+            <div class="group relative hidden flex justify-center items-center md:block">
+                <img src="https://themetechmount.com/html/delmont/images/client/client-02.png" alt="">
+                <div
+                    class="opacity-0 bg-black/50 text-white py-1 px-2 rounded-xl absolute -top-10 transition-all duration-500 group-hover:opacity-100">
+                    client-02
+                </div>
+            </div>
+            <div class="group relative hidden flex justify-center items-center lg:block">
+                <img src="https://themetechmount.com/html/delmont/images/client/client-03.png" alt="">
+                <div
+                    class="opacity-0 bg-black/50 text-white py-1 px-6 rounded-xl absolute -top-10 transition-all duration-500 group-hover:opacity-100">
+                    client-03
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="text-white">
+            <!-- Info Card -->
+            <div class="bg-(--text-color) grid grid-cols-1 gap-5 px-5 py-10 md:grid-cols-2 lg:grid-cols-3 lg:px-10">
+                <!-- card 1 -->
+                <div class="flex items-center gap-5">
+                    <div class="border border-white p-3 text-2xl">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h2>+92 329-7342850</h2>
+                        <p>Contact me to get this template!</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="flex items-center gap-5">
+                    <div class="border border-white p-3 text-2xl">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h2>56Star@gmail.com</h2>
+                        <p>Contact me to get this template!</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="flex items-center gap-5">
+                    <div class="border border-white p-3 text-2xl">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div>
+                        <h2>Mon-sat 7:00-7:00</h2>
+                        <p>Contact me to get this template!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- foter -->
+            <div class="bg-[url(https://themetechmount.com/html/delmont/images/footer-bg.jpg)] bg-center bg-cover">
+                <div class="grid grid-cols-1 gap-20 px-5 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-12">
+                    <div class="flex flex-col gap-10">
+                        <h1 class="font-semibold text-2xl">About Delmont</h1>
+                        <p class="text-[#9AB1B6]">
+                            Our Clinic has grown to provide a world class facility for the clinic advanced restorative
+                            dentistry.
+                        </p>
+                        <p class="text-[#9AB1B6]">
+                            We are among the most qualified implant providers in the AUS with over 30 years of quality
+                            training and experience.
+                        </p>
+                        <div class="flex gap-3">
+                            <div
+                                class="w-8 h-8 rounded-full flex justify-center items-center border border-(--text-color) text-(--text-color) transition-all duration-500 hover:text-white hover:bg-(--text-color) cursor-pointer">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div
+                                class="w-8 h-8 rounded-full flex justify-center items-center border border-(--text-color) text-(--text-color) transition-all duration-500 hover:text-white hover:bg-(--text-color) cursor-pointer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div
+                                class="w-8 h-8 rounded-full flex justify-center items-center border border-(--text-color) text-(--text-color) transition-all duration-500 hover:text-white hover:bg-(--text-color) cursor-pointer">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div
+                                class="w-8 h-8 rounded-full flex justify-center items-center border border-(--text-color) text-(--text-color) transition-all duration-500 hover:text-white hover:bg-(--text-color) cursor-pointer">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Links -->
+                    <div class="flex flex-col gap-10">
+                        <h2 class="font-semibold text-2xl">Quick Links</h2>
+                        <ul class="flex flex-col gap-5">
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> Make Appointments
+                            </li>
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> Before & After
+                            </li>
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> Customer Treatments
+                            </li>
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> Our Doctors Team
+                            </li>
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> Departments Services
+                            </li>
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> About our Clinic
+                            </li>
+                            <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                <i class="fa-solid fa-minus text-(--text-color)"></i> Contact Us
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- News -->
+                    <div class="flex flex-col gap-10">
+                        <h2 class="font-semibold text-2xl">Latest News</h2>
+                        <div class="flex flex-col gap-5">
+                            <!-- card 1 -->
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <img src="https://themetechmount.com/html/delmont/images/blog/01.jpg" class="w-20"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[12px] text-[#9AB1B6]">Janury 1, 2026</span>
+                                    <h5 class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">How
+                                        much
+                                        aspirin to take for stroke</h5>
+                                </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <img src="https://themetechmount.com/html/delmont/images/blog/02.jpg" class="w-20"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[12px] text-[#9AB1B6]">Janury 2, 2026</span>
+                                    <h5 class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                        Implant Surgical equipment technology</h5>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="flex items-center gap-5">
+                                <div>
+                                    <img src="https://themetechmount.com/html/delmont/images/blog/03.jpg" class="w-20"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[12px] text-[#9AB1B6]">Janury 4, 2026</span>
+                                    <h5 class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">The
+                                        Benefits of Middle-Age Fitness</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-10">
+                        <div class="flex flex-col gap-10">
+                            <h2 class="font-semibold text-2xl">Our Services</h2>
+                            <ul class="grid gap-2 grid-cols-2 text-[14px]">
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Surgery
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Psychological
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Cardiology
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Orthopedics
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Pediatric
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Oncology
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Anestheiology
+                                </li>
+                                <li class="transition-all duration-500 hover:text-(--text-color) cursor-pointer">
+                                    <i class="fa-solid fa-minus text-(--text-color)"></i> Dermatology
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-10">
+                            <h2 class="font-semibold text-2xl">Newsletter</h2>
+                            <div>
+                                <input type="text" placeholder="Enter Your Email" class="p-2 bg-[#9AB1B6]">
+                                <i class="fa-regular fa-envelope text-xl text-(--text-color)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-(--heading-color) p-5">
+                <div class="flex justify-center items-center">
+                    Coppy Right &copy;2026 Designed by <span class="italic font-bold text-(--text-color)">M LUQMAN
+                        NASIR</span>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                    <a href="https://www.instagram.com/mluqman._22/">Contact me</a>|
+                    <a href="">Services</a>|
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header script -->
+    <script src="Delmont-header.js"></script>
+</body>
+
+</html>
